@@ -48,6 +48,20 @@ Requires symbol query parameter.
 Requires symbol query paramter.
 
 
+#### Curl command for convenience
+
+```
+curl --request GET \
+  --url http://localhost:3000/
+  
+curl --request GET \
+  --url 'http://localhost:3000/yahoo-finance/stock/get-analysis?symbol=MSFT'
+  
+curl --request GET \
+  --url 'http://0.0.0.0:3000/yahoo-finance/stock/get-news?symbol=GOOG'
+```
+
+
 ## ⚡ Caching
 
 For the purpose of this project  `node-cache` library is used for caching. It is recommended that standalone In-memory db/store (redis,memcached) be used in production mode.
