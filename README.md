@@ -52,10 +52,10 @@ Requires symbol query paramter.
 
 ```
 curl --request GET \
-  --url http://localhost:3000/
+  --url http://0.0.0.0:3000/
   
 curl --request GET \
-  --url 'http://localhost:3000/yahoo-finance/stock/get-analysis?symbol=MSFT'
+  --url 'http://0.0.0.0:3000/yahoo-finance/stock/get-analysis?symbol=MSFT'
   
 curl --request GET \
   --url 'http://0.0.0.0:3000/yahoo-finance/stock/get-news?symbol=GOOG'
