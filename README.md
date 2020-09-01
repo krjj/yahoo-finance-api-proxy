@@ -22,6 +22,22 @@ Server will start listening on port `3000` and address `0.0.0.0`.
 
 Root endpoint
 
+Sample response
+
+```json
+{
+  "root": true,
+  "info": "Yahoo Finance API Proxy",
+  "cacheKeys": [
+    "/yahoo-finance/stock/get-analysis?symbol=AAPL",
+    "/yahoo-finance/stock/get-analysis?symbol=MSFT",
+    "/yahoo-finance/stock/get-news?symbol=AAPL",
+    "/yahoo-finance/stock/get-news?symbol=GOOG"
+  ],
+  "time": "6:34:47 pm"
+}
+```
+
 ### 2. `/yahoo-finance/stock/get-news?symbol=AAPL`
 
 Requires symbol query parameter.
