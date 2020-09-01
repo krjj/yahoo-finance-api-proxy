@@ -1,0 +1,33 @@
+{
+  "name": "yahoo-finance-api-proxy",
+  "version": "1.0.0",
+  "description": "Yahoo Finance API proxy server",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "fastify start -p 3000 -a 0.0.0.0 -l info app.js",
+    "dev": "fastify start -w -l info -P app.js"
+  },
+  "keywords": [],
+  "author": "Kshitij Jamdade",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "fastify": "^3.0.0",
+    "fastify-autoload": "^3.0.2",
+    "fastify-cli": "^2.2.0",
+    "fastify-cors": "^4.1.0",
+    "fastify-plugin": "^2.0.0",
+    "node-cache": "^5.1.2",
+    "unirest": "^0.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.8.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "prettier": "2.1.1",
+    "tap": "^14.0.0"
+  }
+}
